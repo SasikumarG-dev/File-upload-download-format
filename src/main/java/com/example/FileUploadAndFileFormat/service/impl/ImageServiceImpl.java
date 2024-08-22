@@ -7,6 +7,7 @@ import com.example.FileUploadAndFileFormat.uitl.ImageUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -24,6 +25,7 @@ import java.util.Iterator;
 import java.util.Optional;
 
 @Service
+@Qualifier("highSizeCompress")
 public class ImageServiceImpl implements ImageService {
 
     private static final Logger log = LoggerFactory.getLogger(ImageServiceImpl.class);

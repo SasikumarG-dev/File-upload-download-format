@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "36f239fe-7af3-4ab8-bbad-e4755c587bec",
+		"name": "File",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16270612"
+	},
+	"item": [
+		{
+			"name": "ImageView",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Sasik/Downloads/WhatsApp Image 2024-07-30 at 00.16.34.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/image/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ImageUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Sasik/Downloads/WhatsApp Image 2024-07-30 at 00.16.34.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/image/compress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image",
+						"compress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ImageUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Sasik/Downloads/WhatsApp Image 2024-07-30 at 00.16.34.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/image",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
